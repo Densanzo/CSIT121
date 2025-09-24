@@ -25,7 +25,7 @@ a:hover {
     text-decoration: underline;
 }
 a:active {
-    color:rgba(201, 0, 219, 0.856);
+    color:rgb(201, 0, 219, 0.856);
     text-decoration: underline;
 }
 
@@ -60,7 +60,21 @@ img.umbrella-gif{
 }
 
 #lnkbot {
-    color:rgb(12, 126, 69)
+    color:rgb(12, 126, 69);
+    text-decoration: none;
+}
+#lnkbot:visited {
+    color:rgb(70, 56, 17);
+    text-decoration: none;
+}
+
+#lnkbot:hover {
+    color:hotpink;
+    text-decoration: underline;
+}
+#lnkbot:active {
+    color:rgb(201, 0, 219, 0.856);
+    text-decoration: underline;
 }
 footer {
     color: rgb(14, 114, 64)
