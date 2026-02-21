@@ -1,0 +1,51 @@
+body {
+    background-color: #c3a38a;
+}
+
+p {
+    color: #08141e;
+}
+
+h1 {
+    color: #816271;
+}
+
+h2 {
+    color: #997577;
+}
+
+h3 {
+    color: #997577;
+}
+
+li {
+    color: #08141e;
+}
+
+a {
+    color: #20394f;
+}
+
+footer {
+    color: #4e495f;
+}
+
+.publish{
+    color: #4e495f;
+}
+
+.font{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#center{
+    text-align: center;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 2.5%;
+}
+
+#margin5{
+    margin-left: 5%;
+    margin-right: 5%;
+}
