@@ -1,0 +1,56 @@
+body{
+    background-color: #b4c788 ;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header{
+    text-align: center;
+    padding: 2px 5px;
+    font-size: 18px;
+    margin-left: 150px;
+    margin-right: 150px;
+    border-radius: 0px 0px 25px 25px;
+}
+
+.sidenav{
+    width: 150px;
+    position: fixed;
+    z-index: 1;
+    left: 10px;
+    top: 16%;
+    bottom: 20%;
+    overflow-x: hidden;
+    padding-top: 20px;
+    border-radius: 0px 25px 25px 0px;
+}
+
+.sidenav a{
+    padding: 6px 8px 6px 0px;
+    text-decoration: none;
+    font-size: 23px;
+    display: block;
+}
+
+.main{
+    margin-left: 160px;
+    font-size: 28px;
+    padding: 0px 10px;
+    color: #241a1d;
+}
+
+header, .sidenav{
+    background-color: #241a1d;
+}
+
+header, .sidenav ul, .sidenav a{
+    color: #f7ffc5;
+}
+
+
+.sidenav a:hover, .sidenav li:hover, .main a:hover{
+    color: #8b6a44;
+}
+
+.sidenav .current, .main a{
+    color:#62554c ;
+}
