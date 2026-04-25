@@ -1,0 +1,157 @@
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    padding: 40px;
+    background-color: #ffeecc;
+    color: #46425e;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+}
+
+.tltable{
+    border-collapse: collapse;
+    font-size: 18px;
+    min-width: 500px;
+    border: 2px solid #46425e;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tltable thead tr,
+.tltable caption{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.tltable thead th:nth-child(odd){
+    background-color: #ffb0a3;
+}
+
+.tltable thead th:nth-child(even){
+    background-color: #ff6973;
+}
+
+.tltable tbody tr th{
+    background-color: #ffb0a3;
+}
+.tltable tbody tr td:nth-child(even){
+    background-color: #ff6973;
+}
+
+.tltable tbody tr td:nth-child(odd){
+    background-color: #ffb0a3;
+}
+
+.tltable caption{
+    background-color: #00b9be;
+}
+
+.tltable th,
+.tltable td{
+    padding: 12px 15px;
+}
+
+.tltable tbody tr{
+    border-bottom: 1px solid #46425e;
+    border-top: 1px solid #46425e;
+}
+
+.tltable tbody tr:last-of-type{
+    border-bottom: 3px solid #15788c;
+}
+
+.tltable tbody tr td{
+    text-align: center;
+}
+
+.tltable tbody tr img{
+    max-width: 120px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px;
+}
+
+.form{
+    background-color: #ffb0a3;
+    min-width: 300px;
+    padding: 10px;
+    border: 2px solid #46425e;
+    border-radius: 15px;
+}
+
+textarea{
+    max-width: 280px;
+    min-width: 200px;
+    max-height: 280px;
+    min-height: 200px;
+}
+
+nav h2{
+    background-color: #ff6973;
+    margin: 0 20%;
+    border-radius: 25px;
+    border: 2px solid #46425e;
+}
+
+nav{
+    background-color: #ffb0a3;
+    z-index: 1;
+    text-align: center;
+    border: 2px solid #15788c;
+    border-radius: 10px 25px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    min-width: 300px;
+}
+
+nav ul{
+    list-style: none;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+}
+
+nav li{
+    background-color: #00b9be;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid #46425e;
+}
+
+h1{
+    background-color: #00b9be;
+    padding: 10px;
+    border-radius: 10px 25px;
+    min-width: 350px;
+    border: 2px solid #46425e;
+    border-radius: 15px;
+}
+
+.current{
+    background-color: #ff6973;
+    color: #46425e;
+}
+
+a:link{
+    color: #ffeecc;
+}
+
+a:hover{
+    color: #ffb0a3;
+}
+
+a:active{
+    color: #46425e;
+}
+
+a:visited{
+    color: #ffeecc;
+}
