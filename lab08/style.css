@@ -1,0 +1,137 @@
+body{
+    /* This Image Was Drawn By The Student. */
+    background-image: url(images/bgcsit121.png);
+    background-repeat: round;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    min-width: 400px;
+}
+
+header{
+    text-align: center;
+    top: 0;
+    left: 0;
+    font-size: 18px;
+    border-radius: 25px;
+}
+
+.hflex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    min-width: 400px;
+}
+
+.open{
+    font-size: 40px;
+    cursor: pointer;
+    padding: 30px 15px 15px 25px;
+    width: 100px;
+}
+
+.sidenav{
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 16%;
+    bottom: 20%;
+    overflow-x: hidden;
+    padding-top: 20px;
+    border-radius: 0 25px 25px 0;
+    transition: 0.5s;
+}
+
+.sidenav a{
+    padding: 6px 8px 6px 0px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.sidenav nav{
+    padding: 25px;
+}
+
+#main{
+    font-size: 28px;
+    padding: 0px 40px;
+    color: #241a1d;
+    background-color: #f7ffc5;
+    transition: margin-left 0.5s;
+    border-radius: 15px;
+}
+
+footer{
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    font-size: 28px;
+    padding: 0px 10px;
+    color: #241a1d;
+    background-color: #f7ffc5;
+    transition: margin-left 0.5s;
+    padding-bottom: 2px;
+    border-radius: 15px;
+}
+
+img{
+    max-width:  100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer, .center{
+    text-align: center;
+}
+
+.current{
+    font-weight: bold;
+    text-shadow: -2px 1px #91a16a;
+}
+
+header, .sidenav{
+    background-color: #241a1d;
+}
+
+header, .sidenav nav, .sidenav a{
+    color: #f7ffc5;
+}
+
+.sidenav a:hover, .sidenav li:hover, .main a:hover, .author{
+    color: #8b6a44;
+}
+
+.sidenav .current, .main a{
+    color:#62554c ;
+}
+
+#rainbow{
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: .15rem;
+    text-transform: uppercase;
+    color: #d6f5e4;
+    text-shadow: -4px 4px #312629,
+                -8px 8px #463c3c,
+               -12px 12px #62554c,
+               -16px 16px #8b6a44,
+               -20px 20px #b4c788;
+}
+
+
+footer,
+.main,
+header{
+    min-width: 280px;
+}

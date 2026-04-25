@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - [My Art & Animation]</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- your actual favicon.ico or favicon.svg -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="hflex">
+        <div class="open">
+            <span onclick="openNav()">&#9776;</span>
+        </div>
+
+        <div>
+            <h1>Art & Animation Progress</h1>
+            <p class="author"><i>By The Student, March 6, 2026</i></p>
+        </div>
+    </header>
+    
+    <main>
+        <div class="sidenav" id="mySidenav">
+            <nav>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html" class="current">Home</a>
+                <a href="page1.html">JPG Page</a>
+                <a href="page2.html">PNG Page</a>
+                <a href="page3.html">GIF Page</a>
+            </nav>
+        </div>
+
+        <div id="main">
+            <!-- Description section -->
+            <section>
+                <h2 class="center">About This Website</h2>
+                <p>Hello! Welcome to my submission for Lab Assignment 4
+                where we create a website that has local hyperlinks to
+                itself and other files showcasing a theme of images.
+                The theme I chose was my Art and Animation Progress over
+                the past year, I wanted to show the donut man the most!
+                He's nothing crazy but I think he's cute so, it's only
+                natural to add him.</p>
+
+                <img src="images/xd.gif" alt="Very Happy Emoji(XD). I did
+                did not draw this one.">
+                <p id="rainbow">I did not draw this one.</p>
+                <p>Image source: <a href="https://tenor.com/view/xd-gif-10596148827210759343" 
+                  target="_blank">tenor.com/xd-gif</a></p>
+            </section>
+            <!-- Image source/credit -->
+            <div>
+                <p>Image source: All Images Were Drawn By [The Student]</p>
+            </div>
+        </div>
+    </main>
+        
+    <script>
+        function openNav() {
+        document.getElementById("mySidenav").style.width = "160px";
+        document.getElementById("main").style.marginLeft = "160px";
+        }
+
+        function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+        }
+    </script>
+
+    <footer>
+        <p>&copy; 2025 [The Student] - CSIT 121</p>
+        <p><a href="https://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+                src="https://jigsaw.w3.org/css-validator/images/vcss"
+                alt="Valid CSS!"></a></p>
+    </footer>
+</body>
+</html>
