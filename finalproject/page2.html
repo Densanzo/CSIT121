@@ -8,18 +8,22 @@
 </head>
 <body>
     <header>
+        <div class="open">
+            <span onclick="openNav()">&#9776;</span>
+        </div>
         <h1>Game Showcase</h1>
     </header>
-    <nav>
+    <nav id="mynav">
+        <a href="javascript:void(0)" class="closebtn" id="closebtn" onclick="closeNav()">&times;</a>
         <a href="index.html">Home</a>
-        <a href="page2.html" class="current">Game Showcase</a>
+        <a href="page2.html">Game Showcase</a>
         <a href="page3.html">Developer Blogs</a>
-        <a href="page4.htmlhttp://127.0.0.1:3000/finalproject/page4.html">Demo Downloads</a>
+        <a href="page4.html">Demo Downloads</a>
     </nav>
     
     <h2>PFS Directed Games</h2>
     
-    <main class="main">
+    <div class="main">
         <div class="flex">
             <h3>Game Name</h3>
             <p>Hey guess what! this is the game of whatever whatever whatever!</p>
@@ -29,6 +33,31 @@
             <h3>Game Name</h3>
             <p>Hey guess what! this is the game of whatever whatever whatever!</p>
         </div>
-    </main>
+    </div>
+
+    <script>
+        function openNav() {
+        document.getElementById("mynav").style.width = "160px";
+        document.getElementById("mynav").style.padding = "10px";
+        document.getElementById("mynav").style.outline = "3px solid #f2f2f2"
+        document.getElementById("closebtn").style.width = "10px";
+        document.getElementById("closebtn").style.padding = "5px";
+        document.getElementById("closebtn").style.marginLeft = "130px"
+        document.getElementById("closebtn").style.marginTop = "15px"
+        }
+
+        function closeNav() {
+        document.getElementById("mynav").style.width = "0";
+        document.getElementById("mynav").style.padding = "0";
+        document.getElementById("mynav").style.outline = "0"
+        document.getElementById("closebtn").style.width = "0";
+        document.getElementById("closebtn").style.padding = "0";
+        document.getElementById("closebtn").style.outline = "0"
+        }
+    </script>
+
+    <footer>
+        Write something here
+    </footer>
 </body>
 </html>

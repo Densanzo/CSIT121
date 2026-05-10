@@ -8,39 +8,67 @@
 </head>
 <body>
     <header>
+        <div class="open">
+            <span onclick="openNav()">&#9776;</span>
+        </div>
         <h1>Demos & Downloads</h1>
     </header>
-    <nav>
+    <nav id="mynav">
+        <a href="javascript:void(0)" class="closebtn" id="closebtn" onclick="closeNav()">&times;</a>
         <a href="index.html">Home</a>
         <a href="page2.html">Game Showcase</a>
         <a href="page3.html">Developer Blogs</a>
-        <a href="page4.html" class="current">Demo Downloads</a>
+        <a href="page4.html">Demo Downloads</a>
     </nav>
-    <main class="main">
-        <div class="flextable">
-            <table>
-                <caption>PFS Downloads</caption>
-                <thead>
-                    <tr>
-                        <th>Games & Demos</th>
-                        <th>Downloads</th>
-                        <th>Mirror</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th>The Inescapable Link!</th>
-                        <td>Version 2.026</td>
-                        <td>Version 2.026 2.0</td>
-                    </tr>
-                    <tr>
-                        <th>Copy of a Copy!</th>
-                        <td>Version 420</td>
-                        <td>Version 420</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </main>
+
+    <div class="main">
+        <table class="flextable">
+            <caption>PFS Downloads</caption>
+            <thead>
+                <tr>
+                    <th>Games & Demos</th>
+                    <th>Downloads</th>
+                    <th>Mirror</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>The Inescapable Link!</th>
+                    <td>Version 2.026</td>
+                    <td>Version 2.026 2.0</td>
+                </tr>
+                <tr>
+                    <th>Copy of a Copy!</th>
+                    <td>Version 420</td>
+                    <td>Version 420</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        function openNav() {
+        document.getElementById("mynav").style.width = "160px";
+        document.getElementById("mynav").style.padding = "10px";
+        document.getElementById("mynav").style.outline = "3px solid #f2f2f2"
+        document.getElementById("closebtn").style.width = "10px";
+        document.getElementById("closebtn").style.padding = "5px";
+        document.getElementById("closebtn").style.marginLeft = "130px"
+        document.getElementById("closebtn").style.marginTop = "15px"
+        }
+
+        function closeNav() {
+        document.getElementById("mynav").style.width = "0";
+        document.getElementById("mynav").style.padding = "0";
+        document.getElementById("mynav").style.outline = "0"
+        document.getElementById("closebtn").style.width = "0";
+        document.getElementById("closebtn").style.padding = "0";
+        document.getElementById("closebtn").style.outline = "0"
+        }
+    </script>
+
+    <footer>
+        Write something here
+    </footer>
 </body>
 </html>
