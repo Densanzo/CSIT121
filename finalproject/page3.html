@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>PFS Blogs</title>
+</head>
+<body>
+    <header>
+        <div class="open">
+            <span onclick="openNav()">&#9776;</span>
+        </div>
+        <h1>Developer Blogs</h1>
+    </header>
+    <nav id="mynav">
+        <a href="javascript:void(0)" class="closebtn" id="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="page2.html">Game Showcase</a>
+        <a href="page3.html">Developer Blogs</a>
+        <a href="page4.html">Downloads</a>
+    </nav>
+    
+    <h2>PFS Directed Games</h2>
+    
+    <div class="main">
+        <div class="flex">
+            <h3>Char Mander, Dev Update, Prison Break!</h3>
+            <img src="images/gawrsleeping.png" alt="Shark girl relaxing with her eyes closed." id="gawrsleep">
+            <p>This is the <a href="https://emoji.gg/pack/6831-cute-anime-pack" target="_blank">source</a>.</p>
+            <p>Hey Guys! Char Mander here! While in development of the games we had been involved
+            with serious problems with the police so we're cutting back on putting out more patches of the games we have so far :( but we still
+            will be developing the games (under the table). Anyways! We've finished working on the patches of what we told you guys on a previous
+            developer blog but we will wait for our lead developer Danish Sanrioy to get back from prison in 4 years for tax evasion before we release
+            these patches! Thanks for understanding guys! See you in 4 years :) !
+            </p>
+        </div>
+        
+        <div class="flex">
+            <h3>Danish Sanrioy</h3>
+            <img src="images/gawrwave.png" alt="White haired girl waving her hand high above her head with a smile." id="gawrwave">
+            <p>This is the <a href="https://emoji.gg/pack/6831-cute-anime-pack" target="_blank">source</a>.</p>
+            <p>This is my lesson learned under my alias Danish Sanrioy >:3 ! This website was the complete showcase of what I've learned
+            in this class! My biggest road blocks was creating the fake content of the website and the limited color palette of the website.
+            Technical problems I can talk about is the javascript for creating the open button, I didn't know how to place it at first, but then
+            I decided to mimic my lab 8 placement and added a background image to it, though I wouldve liked to make even the background of the button
+            be clickable but I didn't feel the need to fix that script as I was too lazy to( ;-;). What I noticed while testing the site across different 
+            browsers was that font size other than the paragraphs are important, like the close button to the responsive side bar. What I learned the most from this course was,
+            alongside with all the technical skills, was the importance of accessibility and responsiveness! Thanks for teaching me Professor! This course was the most fun I've
+            had in all of the CSIT I've taken. Once Again Thank you.</p>
+        </div>
+    </div>
+
+    <script>
+        function openNav() {
+        document.getElementById("mynav").style.width = "180px";
+        document.getElementById("mynav").style.padding = "10px";
+        document.getElementById("mynav").style.outline = "3px solid #f2f2f2"
+        document.getElementById("closebtn").style.width = "25px";
+        document.getElementById("closebtn").style.padding = "5px";
+        document.getElementById("closebtn").style.marginLeft = "200px"
+        document.getElementById("closebtn").style.outline = "3px solid #f2f2f2"
+        }
+
+        function closeNav() {
+        document.getElementById("mynav").style.width = "0";
+        document.getElementById("mynav").style.padding = "0";
+        document.getElementById("mynav").style.outline = "0"
+        document.getElementById("closebtn").style.width = "0";
+        document.getElementById("closebtn").style.padding = "0";
+        document.getElementById("closebtn").style.outline = "0"
+        }
+    </script>
+
+    <footer>
+        © 2026 The Student. All rights reserved.
+    </footer>
+</body>
+</html>

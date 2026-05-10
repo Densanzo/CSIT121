@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>PFS Downloads</title>
+</head>
+<body>
+    <header>
+        <div class="open">
+            <span onclick="openNav()">&#9776;</span>
+        </div>
+        <h1>Demos & Downloads</h1>
+    </header>
+    <nav id="mynav">
+        <a href="javascript:void(0)" class="closebtn" id="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="page2.html">Game Showcase</a>
+        <a href="page3.html">Developer Blogs</a>
+        <a href="page4.html">Downloads</a>
+    </nav>
+
+    <div class="main">
+        <table class="flextable">
+            <caption>PFS Downloads</caption>
+            <thead>
+                <tr>
+                    <th>Games & Demos</th>
+                    <th>Downloads</th>
+                    <th>Mirror</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>The Inescapable Link!</th>
+                    <td><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Version 2.009</a></td>
+                    <td><a href="https://www.youtube.com/watch?v=H7HmzwI67ec&list=RDH7HmzwI67ec&start_radio=1" target="_blank">Version 2.012</a></td>
+                </tr>
+                <tr>
+                    <th>The Murder of Ambiguity</th>
+                    <td><a href="https://www.youtube.com/@markiplier" target="_blank">Version 420</a></td>
+                    <td><a href="https://www.youtube.com/watch?v=y0sF5xhGreA" target="_blank">Version 1337</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        function openNav() {
+        document.getElementById("mynav").style.width = "180px";
+        document.getElementById("mynav").style.padding = "10px";
+        document.getElementById("mynav").style.outline = "3px solid #f2f2f2"
+        document.getElementById("closebtn").style.width = "25px";
+        document.getElementById("closebtn").style.padding = "5px";
+        document.getElementById("closebtn").style.marginLeft = "200px"
+        document.getElementById("closebtn").style.outline = "3px solid #f2f2f2"
+        }
+
+        function closeNav() {
+        document.getElementById("mynav").style.width = "0";
+        document.getElementById("mynav").style.padding = "0";
+        document.getElementById("mynav").style.outline = "0"
+        document.getElementById("closebtn").style.width = "0";
+        document.getElementById("closebtn").style.padding = "0";
+        document.getElementById("closebtn").style.outline = "0"
+        }
+    </script>
+
+    <footer>
+        © 2026 The Student. All rights reserved.
+    </footer>
+</body>
+</html>

@@ -1,0 +1,247 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F4C27A;
+    min-width: 600px;
+    color:#244A73;
+    background-image: url(images/PixelForge-transparent.png);
+    background-repeat: round;
+    background-color: #4A90D9;
+}
+
+.open{
+    display: none;
+}
+
+.closebtn{
+    display: none;
+}
+
+nav{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10px;
+    background-color:#9EDEC3;
+    border-radius: 10px;
+    border: 3px solid #f2f2f2;
+    min-width: 640px;
+}
+
+nav a{
+    border: 3px solid #f2f2f2;
+    background-color: #F4C27A;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    min-width: 100px;
+    text-align: center;
+    border-radius: 20px;
+    color:#244A73;
+    text-shadow: 2px 2px #f2f2f2;
+}
+
+a:hover{
+    color: #f2f2f2;
+}
+
+h2, h1, caption{
+    text-align: center;
+    font-size: 40px;
+    border: 3px solid #f2f2f2;
+    background-color: #9EDEC3;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    text-shadow: 2px 2px #f2f2f2;
+}
+
+img{
+    max-width:  100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #f2f2f2;
+    border-radius: 10px;
+}
+
+ul{
+    list-style: none;
+    padding-left: 0;
+    background-color: #9EDEC3;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    border: 3px solid #f2f2f2;
+    border-radius: 10px;
+}
+
+table a{
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    color: #4A90D9;
+    text-shadow: 2px 2px 2px #9EDEC3;
+}
+
+figcaption a{
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    color: #4A90D9;
+    text-shadow: 2px 2px 2px #9EDEC3;
+}
+
+li a{
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    color: #4A90D9;
+    padding: 10px;
+    text-shadow: 2px 2px 2px #F4C27A;
+}
+
+.main{
+    display: flex;
+    text-align: center;
+    min-width: 640px;
+    background-color: #9EDEC3;
+    border: 3px solid #f2f2f2;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.main .flex{
+    width: 40%;
+    background-color: #F4C27A;
+    border: 3px solid #f2f2f2;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    text-shadow: 2px 2px 2px #f2f2f2;
+}
+
+.main .flex h3{
+    text-shadow: 2px 2px 2px #f2f2f2;
+    font-size: 25px;
+}
+
+.main .flex p, th, td{
+    font-size: 18px;
+}
+
+.main .flextable{
+    background-color: #F4C27A;
+    border: 3px solid #f2f2f2;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main .flextable{
+    background-color: #F4C27A;
+    border-radius: 10px;
+    border: 3px solid #f2f2f2;
+    padding: 5px;
+    flex-direction: column;
+    display: flex;
+}
+
+.main .flextable th,
+.main .flextable td{
+    border: 2px solid #f2f2f2;
+    padding: 5px;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.main .flextable th{
+    text-shadow: 1px 1px 1px #9EDEC3;
+}
+
+#gawrsleep,
+#gawrwave,
+#pfslogo,
+#pfslogotransparent{
+    width: 40%;
+    background-color: #4A90D9;
+}
+
+footer{
+    text-align: center;
+    background-color: #9EDEC3;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #f2f2f2;
+    border-radius: 10px;
+    text-shadow: 2px 2px 2px #F4C27A;
+}
+
+@media (max-width: 740px){
+    body{
+        min-width: 340px;
+    }
+
+    .open{
+        position: fixed;
+        font-size: 40px;
+        cursor: pointer;
+        padding: 0;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100px;
+        left: 10px;
+        top: 20px;
+        text-align: center;
+        text-shadow: 2px 2px 2px #f2f2f2;
+        display: block;
+    }
+
+    .closebtn{
+        margin-left: 0;
+        position: fixed;
+        overflow: hidden;
+        border: 0;
+        width: 0;
+        padding: 0;
+        display: block;
+        background-color: #9EDEC3;
+        font-size: 30px;
+    }
+    
+    nav{
+        grid-template-columns: repeat(1, 1fr);
+        width: 0;
+        padding: 0;
+        min-width: 0px;
+        border: 0px;
+        overflow: hidden;
+        position: fixed;
+        transition: width 0.2s;
+    }
+
+    nav a{
+        min-width: 0;
+    }
+    
+    .main{
+        flex-direction: column;
+        min-width: 300px;
+    }
+
+    .main .flex{
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 10px;
+    }
+}

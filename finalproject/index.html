@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>PFS Home</title>
+</head>
+<body>
+    <header>
+        <div class="open">
+            <span onclick="openNav()">&#9776;</span>
+        </div>
+        <h1>Home</h1>
+    </header>
+    <nav id="mynav">
+        <a href="javascript:void(0)" class="closebtn" id="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="page2.html">Game Showcase</a>
+        <a href="page3.html">Developer Blogs</a>
+        <a href="page4.html">Downloads</a>
+    </nav>
+
+    <h2>About Us</h2>
+
+    <div class="main">    
+        <div class="flex">
+            <h3>Company Background History</h3>
+            <img src="images/PixelForge.png" alt="Pixel Forge Studios Business Logo." id="pfslogo">
+            <p>PixelForge Studios is a small indie gaming studio dedicated to creating emotionally 
+            engaging and visually rich interactive experiences. Specializing in narrative-driven games, 
+            pixel-art worlds, and experimental mechanics, the studio's team includes artists, 
+            developers, composers, and writers who collaborate to deliver memorable gameplay. 
+            PixelForge Studios places a strong emphasis on accessibility features to ensure their 
+            games are inclusive. </p>
+        </div>
+
+        <div class="flex">
+            <h3>Team Biographies</h3>
+            <p>PixelForge Studios is comprised of a small, dedicated team of designers and 
+            developers who team together to produce timely, polished projects and updates.
+            Bryant Henderson, the leader of our team of developers received his Masters in 
+            Software Engineering from New York Chicago Bulls University.
+            </p>
+            <img src="images/PixelForge-transparent.png" alt="Pixel Forge Studios Business Logo Transparent" id="pfslogotransparent">
+        </div>
+    </div>
+
+    <script>
+        function openNav() {
+        document.getElementById("mynav").style.width = "180px";
+        document.getElementById("mynav").style.padding = "10px";
+        document.getElementById("mynav").style.outline = "3px solid #f2f2f2"
+        document.getElementById("closebtn").style.width = "25px";
+        document.getElementById("closebtn").style.padding = "5px";
+        document.getElementById("closebtn").style.marginLeft = "200px"
+        document.getElementById("closebtn").style.outline = "3px solid #f2f2f2"
+        }
+
+        function closeNav() {
+        document.getElementById("mynav").style.width = "0";
+        document.getElementById("mynav").style.padding = "0";
+        document.getElementById("mynav").style.outline = "0"
+        document.getElementById("closebtn").style.width = "0";
+        document.getElementById("closebtn").style.padding = "0";
+        document.getElementById("closebtn").style.outline = "0"
+        }
+    </script>
+
+    <footer>
+        © 2026 The Student. All rights reserved.
+    </footer>
+</body>
+</html>

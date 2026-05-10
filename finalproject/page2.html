@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>PFS Showcase</title>
+</head>
+<body>
+    <header>
+        <div class="open">
+            <span onclick="openNav()">&#9776;</span>
+        </div>
+        <h1>Game Showcase</h1>
+    </header>
+    <nav id="mynav">
+        <a href="javascript:void(0)" class="closebtn" id="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="page2.html">Game Showcase</a>
+        <a href="page3.html">Developer Blogs</a>
+        <a href="page4.html">Downloads</a>
+    </nav>
+    
+    <h2>PFS Directed Games</h2>
+    
+    <div class="main">
+        <div class="flex">
+            <h3>The Inescapeable Link!</h3>
+            <p>You play as Hito, a software engineer that does what he can to escape reality at his boring and awful office job.
+            The company you work at is corrupt, coworkers throw each other under the bus for a promotion, steal each other's food 
+            when there are items in the fridge, a ritualistic dancing cult has been rumored to even exist in the office but it could never been
+            proven.</p>
+            <img src="images/guyinoffice.png" alt="2 men in an office sitting across each other in a gray color palette.">
+            <p>This is the <a href="https://studiodeschutter.com/news/lighting-at-the-computer-workplace" target="_blank">source</a>.</p>
+            <p>Until one day... as you are on your personal computer you are sent a suspicious email, contains a link and it 
+            looks exaclty like something most companies IT would tell you not to click but why should you care? You hate your job,
+            the company could go to hell. So you click it. And you'll learn the consequences of your
+            actions.</p>
+            <h4>Assets Used!</h4>
+            <ul>
+                <li><a href="https://pizzadoggy.itch.io/the-humble-bundle" target="_blank">Pizza Doggy's Asset Packs</a></li>
+                <li><a href="https://moonanagames.itch.io/81-song-pack" target="_blank">81 Songs Pack by Moonana</a></li>
+                <li><a href="https://makotohiramatsu.itch.io/lost" target="_blank">Soundscape and Ambient Music Pack by MakotoHiramatsu</a></li>
+            </ul>
+        </div>
+        
+        <div class="flex">
+            <h3>The Murder of Ambiguity</h3>
+            <img src="images/doomcover.jpg" alt="Huge Alien overlooking soldier with a rifle in hand with a red focused color palette.">
+            <p>This is the <a href="https://hackaday.com/2018/12/28/doom-retrospective-25-years-of-metal/" target="_blank">source</a>.</p>
+            <p>You are sent on a mission from your church to spread the word of your religion to a country far from modern society.
+            As you are on the way to village, you stumble upon advanced buildings and thriving civil life. This was not what was told to you
+            when you were sent on your mission. Is something wrong here? They were thriving but this was not the bumpkin village you were told it
+            would be, but why should you question such thriving life? But that's what was wrong. This was the action of a advanced parasitic alien
+            that landed on this poor village and consumed the minds of every person it reached, and only hunger for more. What will you do? How will
+            you ht it? When will you start?</p>
+        </div>
+    </div>
+
+    <script>
+        function openNav() {
+        document.getElementById("mynav").style.width = "180px";
+        document.getElementById("mynav").style.padding = "10px";
+        document.getElementById("mynav").style.outline = "3px solid #f2f2f2"
+        document.getElementById("closebtn").style.width = "25px";
+        document.getElementById("closebtn").style.padding = "5px";
+        document.getElementById("closebtn").style.marginLeft = "200px"
+        document.getElementById("closebtn").style.outline = "3px solid #f2f2f2"
+        }
+
+        function closeNav() {
+        document.getElementById("mynav").style.width = "0";
+        document.getElementById("mynav").style.padding = "0";
+        document.getElementById("mynav").style.outline = "0"
+        document.getElementById("closebtn").style.width = "0";
+        document.getElementById("closebtn").style.padding = "0";
+        document.getElementById("closebtn").style.outline = "0"
+        }
+    </script>
+
+    <footer>
+        © 2026 The Student. All rights reserved.
+    </footer>
+</body>
+</html>
